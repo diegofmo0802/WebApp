@@ -36,7 +36,7 @@ Para empezar a usar el modulo debes descargar los tipos e importar el modulo.<br
 
 ## Descargar los tipos
 - v1.0.0 - No disponible
-- v2.0.0 - <a download href="/Versiones/v2.0.0/WebApp.d.ts">Descargar</a>
+- v2.0.0 - <a download href="https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.d.ts">Descargar</a>
 
 ## Importar y usar el modulo
 Para usar el modulo primero debes descargar los tipos del modulo<br/>
@@ -68,7 +68,7 @@ ayudas de auto completado.
     </tr>
     <tr>
         <td>v2.0.0</td>
-        <td>https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js</td>
+        <td>https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js</td>
     </tr>
 </table>
 
@@ -93,7 +93,7 @@ Ahora expliquemos como importar el modulo
 - Si harás la lógica en una etiqueta HTML:
   ```html
   <script type="module">
-    import WebApp from 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js';
+    import WebApp from 'https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js';
   </script>
   ```
 - Si lo harás en un archivo aparte:
@@ -103,7 +103,7 @@ Ahora expliquemos como importar el modulo
   ```
   **Archivo.js**
   ```js
-  import WebApp from 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js';
+  import WebApp from 'https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js';
   ```
 <br/><br/><br/>
 
@@ -161,14 +161,14 @@ Por el momento es algo simple y permite crear HTMLElement´s en una sola linea e
 ### Ejemplos
 - Para crear un elemento div con clase "contenedor"
   ```js
-  import { Elemento } from 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js';
+  import { Elemento } from 'https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js';
 
   let MiDiv = Elemento.Crear('div', null, {class: "contenedor"});
   Elemento.body.appendChild(MiDiv);
   ```
 - Para crear un formulario que reciba el nombre y envié una alerta con el
   ```js
-  import { Elemento } from '/WebApp.js';
+  import { Elemento } from 'https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js';
   let Nombre = Elemento.Crear('input', null, {type: 'text', placeholder: 'Nombre:'});
   let Formulario = Elemento.Crear('div', null, {class: "formulario"}, null, [
     Nombre,
@@ -218,8 +218,8 @@ Por el momento es algo simple y permite hacer peticiones http.
 
 ### Ejemplos
 - Petición GET para ver mis proyectos.
-  ```
-  import { Ajax } from './WebApp.js';
+  ```js
+  import { Ajax } from 'https://diegofmo0802.github.io/WebApp/Versiones/v2.0.0/WebApp.js';
   Ajax.Consultar('https://diegofmo0802.github.io/source/data/projects.json', 'GET').then((data) => {
     let Proyectos = JSON.parse(data);
     console.log(Proyectos);
