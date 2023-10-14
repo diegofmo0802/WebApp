@@ -30,6 +30,12 @@ export class Elemento {
      * @param Hijos Los Hijos que tendrá el elemento.
      */
     static Crear(Tipo: keyof HTMLElementTagNameMap, Texto?: string, Atributos?: object, Eventos?: Elemento.Eventos.EvHTMLElement, Hijos?: Array<HTMLElement>): HTMLElement;
-    static Crear(Tipo: 'textarea',                 Texto?: string, Atributos?: object, Eventos?: Elemento.Eventos.EvHTMLTextAreaElement, Hijos?: Array<HTMLElement>): HTMLTextAreaElement;
+    static Crear(Tipo: 'textarea',                  Texto?: string, Atributos?: object, Eventos?: Elemento.Eventos.EvHTMLTextAreaElement, Hijos?: Array<HTMLElement>): HTMLTextAreaElement;
+	/**
+	 * Agrega multiples hijos a un elemento.
+	 * @param Padre El elemento al que se le añadirán los hijos.
+	 * @param Hijos Los elementos que se añadirán.
+	 */
+	static Agregar(Padre: HTMLElement, Hijos: Array<Elemento>): HTMLElement
 }
 export default Elemento;

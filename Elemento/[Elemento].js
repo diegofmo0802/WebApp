@@ -23,5 +23,14 @@ class Elemento {
 		for (let Hijo in Hijos) Elemento.appendChild(Hijos[Hijo]);
 		return Elemento;
 	}
+	/**
+	 * Agrega multiples hijos a un elemento.
+	 * @param {HTMLElement} Padre El elemento al que se le añadirán los hijos.
+	 * @param {Array<Elemento>} Hijos Los elementos que se añadirán.
+	 */
+	static Agregar(Padre, Hijos) {
+		for (let Hijo in Hijos) Padre.appendChild(Hijos[Hijo]);
+		return Padre;
+	}
 }
 export default Elemento;
