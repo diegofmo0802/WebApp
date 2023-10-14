@@ -7,8 +7,4 @@ export {
     Elemento,
     WebApp
 };
-export default {
-    Ajax: Ajax,
-    Elemento: Elemento,
-    WebApp: WebApp
-};
+export default WebApp;

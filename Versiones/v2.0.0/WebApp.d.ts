@@ -1,4 +1,4 @@
-declare module 'https://diegofmo0802.github.io/WebApp/WebApp.js' {
+declare module 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js' {
     namespace Ajax {
         type Método = 'GET' | 'POST' | 'PUT' | 'DELETE';
     }
