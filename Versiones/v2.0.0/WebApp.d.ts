@@ -1,3 +1,12 @@
+/**
+ * @author diegofmo0802 <diegofmo0802@gmail.com>.
+ * @description Los tipos del modulo WebApp v2.0.0
+ * @license Apache-2.0
+ *
+ * Puedes importar el usando
+ * En el HTML: <script type="module" src="https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js"></script>
+ * En JS import WebApp from 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js'
+ */
 declare module 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js' {
     namespace Ajax {
         type Método = 'GET' | 'POST' | 'PUT' | 'DELETE';
@@ -39,6 +48,8 @@ declare module 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js' {
         static FormData(Datos: object): FormData;
     }
     class Elemento {
+        static body: HTMLElement;
+        static head: HTMLElement;
         /**
          * Crea un elemento HTML.
          * @param Tipo El tipo de elemento.

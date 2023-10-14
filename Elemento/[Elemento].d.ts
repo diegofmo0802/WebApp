@@ -20,6 +20,8 @@ export namespace Elemento {
     }
 }
 export class Elemento {
+    static body: HTMLElement;
+    static head: HTMLElement;
     /**
      * Crea un elemento HTML.
      * @param Tipo El tipo de elemento.

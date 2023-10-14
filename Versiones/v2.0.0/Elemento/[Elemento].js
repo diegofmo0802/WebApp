@@ -5,6 +5,8 @@
  */
 
 class Elemento {
+    static body = document.querySelector('body');
+    static head = document.querySelector('head');
 	/**
 	 * Crea un elemento.
 	 * @param {keyof HTMLElementTagNameMap} Tipo El tipo de elemento.
