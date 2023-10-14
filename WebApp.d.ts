@@ -4,8 +4,8 @@
  * @license Apache-2.0
  *
  * Puedes importar el usando
- * En el HTML: <script type="module" src="https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js"></script>
- * En JS import WebApp from 'https://diegofmo0802.github.io/WebApp/v2.0.0/WebApp.js'
+ * En el HTML: <script type="module" src="https://diegofmo0802.github.io/WebApp/WebApp.js"></script>
+ * En JS import WebApp from 'https://diegofmo0802.github.io/WebApp/WebApp.js'
  */
 declare module 'https://diegofmo0802.github.io/WebApp/WebApp.js' {
     namespace Ajax {
