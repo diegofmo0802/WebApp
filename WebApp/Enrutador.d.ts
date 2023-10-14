@@ -6,12 +6,12 @@ export namespace Enrutador {
 }
 export class Enrutador {
     /** La lista de reglas de enrutamiento de la app. */
-    private Reglas: Map<string, WebApp.Regla>;
+    private Reglas: Map<string, Enrutador.Regla>;
     /**
      * Crea una instancia de Enrutador.
      * @param Reglas La/s regla/s de enrutamiento.
      */
-    public constructor(...Reglas?: Array<Enrutador.Regla>);
+    public constructor(...Reglas: Array<Enrutador.Regla>);
     /**
      * Enruta la petición a una ruta y ejecuta la función definida para ella.
      * @param Ruta La ruta que desea enrutar.

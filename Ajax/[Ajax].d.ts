@@ -1,8 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Añade una forma sencilla de hacer peticiones AJAX.
- * @license Saml
- * @module Saml/WebApp/Ajax
+ * @license Apache-2.0
  */
 export namespace Ajax {
 	type Método = 'GET' | 'POST' | 'PUT' | 'DELETE';

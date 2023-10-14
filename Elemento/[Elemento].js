@@ -1,8 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Añade una forma sencilla de crear elementos.
- * @license Saml
- * @module Saml/WebApp/Elemento
+ * @license Apache-2.0
  */
 
 class Elemento {
