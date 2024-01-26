@@ -1,0 +1,113 @@
+.WApp_Cargando {
+    --Color_Fondo: rgba(0,0,0,1);
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+    border: rgba(255,255,0,1) 2px solid;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0em;
+    position: absolute;
+    top: 0em;
+    width: 100%;
+    z-index: 5;
+}
+.WApp_Desvanecer {
+    animation: Desvanecer var(--Tiempo,500ms) linear 0s 1;
+}
+.WApp_Aparecer {
+    animation: Desvanecer var(--Tiempo,500ms) linear 0s 1 reverse;
+}
+.WApp_Cargando > div {
+    align-items: center;
+    /* animation: Desvanecer var(--Tiempo,250ms) linear 0s 1 reverse; */
+    background: var(--Color_Fondo,rgba(0,0,0,1));
+    /* border: rgba(255,0,0,1) 2px solid; */
+    border-radius: 50%;
+    box-shadow: var(--Color_Fondo,rgba(0,0,0,1)) 0em 0em 0em 2vw,
+                rgba(0,180,255) 0em 0em 2vw 2vw;
+    display: flex;
+    justify-content: center;
+    padding: var(--Relleno, 1%);
+    position: relative;
+    width: 40%;
+    z-index: -5;
+}
+.WApp_Cargando > div > span {
+    align-items: center;
+    background: var(--Color_Fondo,rgba(0,0,0,1));
+    /* border: rgba(0,0,255,1) 2px solid; */
+    border-radius: 50%;
+    display: flex;
+    height: calc(100% - ((var(--Relleno, 1%) * 5) / 1.5));
+    justify-content: center;
+    position: absolute;
+    width: calc(100% - ((var(--Relleno, 1%) * 5) / 1.5));
+    z-index: -1;
+}
+.WApp_Cargando > div > span:last-of-type {
+    height: calc(100% - ((var(--Relleno, 1%) * 5) / 3));
+    width: calc(100% - ((var(--Relleno, 1%) * 5) / 3));
+    z-index: -3;
+}
+.WApp_Cargando > div > img {
+    background: var(--Color_Fondo,rgba(0,0,0,1));
+    /* border: rgba(0,255,0,1) 2px solid; */
+    border-radius: 50%;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.WApp_Cargando > div::before,
+.WApp_Cargando > div > span::before,
+.WApp_Cargando > div::after,
+.WApp_Cargando > div > span::after {
+    /* border: rgba(0,255,0,1) 2px solid; */
+    background: blue;
+    content: '';
+    position: absolute;
+}
+
+
+.WApp_Cargando > div::before,
+.WApp_Cargando > div > span::before {
+    height: var(--Tamaño_Linea, 10%);
+    width: 100%;
+}
+.WApp_Cargando > div::after,
+.WApp_Cargando > div > span::after {
+    height: 100%;
+    width: var(--Tamaño_Linea, 10%);
+}
+.WApp_Cargando > div > span::before,
+.WApp_Cargando > div > span::after {
+    background: rgba(255,180,220,1);
+    z-index: 0;
+}
+.WApp_Cargando > div > span:last-of-type:before,
+.WApp_Cargando > div > span:last-of-type:after {
+    background: rgba(0,180,220,1);
+    z-index: -2;
+}
+.WApp_Cargando > div::before,
+.WApp_Cargando > div::after {
+    background: rgba(255,180,0,1);
+    z-index: -4;
+}
+.WApp_Cargando > div::before                    {animation: Girar 1s linear 0s infinite reverse;}
+.WApp_Cargando > div > span::before             {animation: Girar 2s linear 0s infinite;}
+.WApp_Cargando > div::after                     {animation: Girar 6s linear 0s infinite reverse;}
+.WApp_Cargando > div > span::after              {animation: Girar 5s linear 0s infinite;}
+.WApp_Cargando > div > span:last-of-type:before {animation: Girar 3s linear 0s infinite reverse;}
+.WApp_Cargando > div > span:last-of-type:after  {animation: Girar 4s linear 0s infinite;}
+
+@keyframes Girar {
+    0%   {transform: rotate(0deg);  }
+    100% {transform: rotate(360deg);}
+}
+@keyframes Desvanecer {
+    0%   {opacity: 100%;}
+    100% {opacity: 0%;}
+}

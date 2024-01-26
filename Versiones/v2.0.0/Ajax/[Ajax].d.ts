@@ -3,7 +3,6 @@
  * @description Añade una forma sencilla de hacer peticiones AJAX.
  * @license Apache-2.0
  */
-
 export namespace Ajax {
 	type Método = 'GET' | 'POST' | 'PUT' | 'DELETE';
 }
