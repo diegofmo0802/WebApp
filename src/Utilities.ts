@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description append utilities to webapp.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 

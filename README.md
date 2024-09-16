@@ -36,11 +36,11 @@ That's all for now, [diegofmo0802](https://diegofmo0802.github.io) signing off.
 **With npm**
 - in command prompt or terminal
   ```npm
-  npm install my.webapp
+  npm install saml.webapp
   ```
 - import in your project
   ```ts
-  import WebApp from "my.webapp";
+  import WebApp from "saml.webapp";
   ```
 
 **using github package**

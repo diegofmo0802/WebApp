@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Adds a class to create a menu.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 

@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Adds the router to the webapp.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 

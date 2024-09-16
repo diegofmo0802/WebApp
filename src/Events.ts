@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Adds a class that manages events.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 export namespace Events {

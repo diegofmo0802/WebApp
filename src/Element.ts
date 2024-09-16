@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description Adds a simple way to create HTML elements through JS.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 

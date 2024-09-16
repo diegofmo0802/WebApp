@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description add the rule class to the app.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
 */
 

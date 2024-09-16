@@ -1,7 +1,7 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description WebApp is a module to create web applications SPA with js/ts.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 import Element from "../Element.js";

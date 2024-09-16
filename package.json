@@ -1,5 +1,5 @@
 {
-  "name": "my.webapp",
+  "name": "saml.webapp",
   "version": "1.0.0",
   "description": "a simple module to create single page applications",
   "main": "build/WebApp.js",
@@ -16,6 +16,17 @@
     "email": "diegofmo0802@gmail.com",
     "url": "https://diegofmo0802.github.io"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegofmo0802/WebApp"
+  },
+  "files": [
+    "src/",
+    "changes.md",
+    "LICENSE",
+    "README.md",
+    "tsconfig.json"
+  ],
   "license": "Apache-2.0",
   "devDependencies": {
     "typescript": "^5.6.2"
