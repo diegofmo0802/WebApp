@@ -74,7 +74,7 @@ That's all for now, [diegofmo0802](https://diegofmo0802.github.io) signing off.
   ```
 - compile the project
   ```npm
-  npm run build
+  npm run compile
   ```
 - import in your project
   ```ts
