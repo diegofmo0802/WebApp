@@ -1,0 +1,23 @@
+{
+  "name": "my.webapp",
+  "version": "1.0.0",
+  "description": "a simple module to create single page applications",
+  "main": "build/WebApp.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "WebApp",
+    "SPA"
+  ],
+  "author": {
+    "name": "diegofmo0802",
+    "email": "diegofmo0802@gmail.com",
+    "url": "https://diegofmo0802.github.io"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
