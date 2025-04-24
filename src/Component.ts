@@ -1,14 +1,14 @@
 /**
  * @author diegofmo0802 <diegofmo0802@gmail.com>.
  * @description adds a class to create components with js/ts.
- * @module my.webapp
+ * @module saml.webapp
  * @license Apache-2.0
  */
 
 import Element from "./Element.js";
 import Events from "./Events.js";
 
-export abstract class Component<T extends keyof Element.Type> extends Events {
+export abstract class Component<T extends keyof Element.Type, eventMap extends Events.EventMap = Events.EventMap> extends Events<eventMap> {
     /**
      * The component element.
      */
